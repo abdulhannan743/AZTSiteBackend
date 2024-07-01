@@ -1,3 +1,5 @@
+import { FieldHook } from "payload/types";
+
 const format = (val) =>
   val
     .replace(/ /g, "-")
@@ -5,7 +7,7 @@ const format = (val) =>
     .toLowerCase();
 
 export const formatSlug =
-  (fallback) =>
+  (fallback): FieldHook =>
   ({ value, originalDoc, data }) => {
     if (typeof value === "string") {
       return format(value);

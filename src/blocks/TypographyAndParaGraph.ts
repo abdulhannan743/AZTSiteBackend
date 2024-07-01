@@ -1,7 +1,8 @@
+import { Block } from "payload/types";
 import { backgroundColor } from "../Fields/backgroundColor";
 import { paragraph, typography } from "../Fields/typography";
 
-export const TypographyAndParaGraph = {
+export const TypographyAndParaGraph: Block = {
   slug: "yypographyAndParaGraph",
   labels: {
     singular: "Typography And ParaGraph",

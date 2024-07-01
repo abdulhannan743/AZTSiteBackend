@@ -6,8 +6,9 @@ import { CallToAction } from "../blocks/CallToAction";
 import { ImageSlider } from "../blocks/ImageSlider";
 import { TypographyAndParaGraph } from "../blocks/TypographyAndParaGraph";
 import { ContactInfo } from "../blocks/ContactInfo";
+import { CollectionConfig } from "payload/types";
 
-export const Pages = {
+export const Pages: CollectionConfig = {
   slug: "pages",
   labels: {
     singular: "Page",

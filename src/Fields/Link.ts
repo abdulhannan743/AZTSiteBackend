@@ -1,4 +1,6 @@
-export const link = {
+import { Field } from "payload/types";
+
+export const link: Field = {
   name: "link",
   type: "array",
   fields: [

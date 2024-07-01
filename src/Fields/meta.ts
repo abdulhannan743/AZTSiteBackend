@@ -1,4 +1,6 @@
-export const meta = {
+import { GroupField } from "payload/types";
+
+export const meta: GroupField = {
   name: "meta",
   label: "Meta",
   type: "group",

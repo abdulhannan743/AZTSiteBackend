@@ -1,6 +1,7 @@
+import { Block } from "payload/types";
 import { link } from "../Fields/Link";
 
-export const Hero = {
+export const Hero: Block = {
   slug: "hero",
   labels: {
     singular: "Hero Block",

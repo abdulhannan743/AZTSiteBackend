@@ -1,4 +1,6 @@
-export const address = {
+import { Field } from "payload/types";
+
+export const address: Field = {
   name: "address",
   label: "Address",
   type: "array",
@@ -18,7 +20,7 @@ export const address = {
   ],
 };
 
-export const email = {
+export const email: Field = {
   name: "email",
   label: "Email",
   type: "array",
@@ -37,7 +39,7 @@ export const email = {
   ],
 };
 
-export const contactNumber = {
+export const contactNumber: Field = {
   name: "contactNumber",
   label: "Contact Number",
   type: "array",

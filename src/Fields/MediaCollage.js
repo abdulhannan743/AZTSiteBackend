@@ -1,5 +1,6 @@
 export const MediaCollage = {
   slug: "media-collage",
+  type: "array",
   labels: {
     singular: "Media Collage",
     plural: "Media Collages",
@@ -10,7 +11,7 @@ export const MediaCollage = {
       label: "Media",
       type: "array",
       minRows: 3,
-      maxRows: 3,
+      maxRows: 10,
       fields: [
         {
           type: "upload",

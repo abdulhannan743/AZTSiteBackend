@@ -10,7 +10,7 @@ export const ContactInfo = {
   fields: [
     backgroundColor,
     {
-      name: "Heading",
+      name: "heading",
       label: "Contact Heading",
       type: "richText",
       required: true,

@@ -1,7 +1,8 @@
+import { CollectionConfig } from "payload/types";
 import { link } from "../Fields/Link";
 import { paragraph, typography } from "../Fields/typography";
 
-export const IndustriesContent = {
+export const IndustriesContent: CollectionConfig = {
   slug: "industries",
   labels: {
     singular: "Industry",

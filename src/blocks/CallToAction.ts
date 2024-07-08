@@ -1,7 +1,8 @@
+import { Block } from "payload/types";
 import { link } from "../Fields/Link";
 import { backgroundColor } from "../Fields/backgroundColor";
 
-export const CallToAction = {
+export const CallToAction: Block = {
   slug: "call-to-action",
   labels: {
     singular: "Call to Action",

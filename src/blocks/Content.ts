@@ -1,8 +1,8 @@
-import Slider from "./ImageSlider";
 import { link } from "../Fields/Link";
 import { backgroundColor } from "../Fields/backgroundColor";
+import { Block } from "payload/types";
 
-export const Content = {
+export const Content: Block = {
   slug: "content",
   labels: {
     singular: "Content Block",

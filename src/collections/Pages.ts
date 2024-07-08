@@ -8,8 +8,9 @@ import { TypographyAndParaGraph } from "../blocks/TypographyAndParaGraph";
 import { ContactInfo } from "../blocks/ContactInfo";
 import { MetaData } from "../blocks/MetaData";
 import { IndustriesContent } from "../blocks/IndustriesContent";
+import { CollectionConfig } from "payload/types";
 
-export const Pages = {
+export const Pages: CollectionConfig = {
   slug: "pages",
   labels: {
     singular: "Page",

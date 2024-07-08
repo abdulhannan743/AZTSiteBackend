@@ -5,6 +5,7 @@ import { ContactInfo } from "../blocks/ContactInfo";
 import Content from "../blocks/Content";
 import { Hero } from "../blocks/Hero";
 import { ImageSlider } from "../blocks/ImageSlider";
+import { SimpleRichText } from "../blocks/SimpleRichText";
 import { TwoColumn } from "../blocks/TwoColumn";
 import { TypographyAndParaGraph } from "../blocks/TypographyAndParaGraph";
 
@@ -44,8 +45,14 @@ export const Footer = {
         ImageSlider,
         TypographyAndParaGraph,
         ContactInfo,
+        SimpleRichText,
       ],
       required: true,
+    },
+    {
+      name: "navLinksHeading",
+      label: "Nav Links Heading",
+      type: "text",
     },
     {
       name: "navLinks",
@@ -70,6 +77,11 @@ export const Footer = {
           relationTo: "pages",
         },
       ],
+    },
+    {
+      name: "linksHeading",
+      label: "Links Heading",
+      type: "text",
     },
     link,
   ],

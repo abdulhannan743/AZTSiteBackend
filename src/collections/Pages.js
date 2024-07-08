@@ -6,6 +6,8 @@ import { CallToAction } from "../blocks/CallToAction";
 import { ImageSlider } from "../blocks/ImageSlider";
 import { TypographyAndParaGraph } from "../blocks/TypographyAndParaGraph";
 import { ContactInfo } from "../blocks/ContactInfo";
+import { MetaData } from "../blocks/MetaData";
+import { IndustriesContent } from "../blocks/IndustriesContent";
 
 export const Pages = {
   slug: "pages",
@@ -48,6 +50,8 @@ export const Pages = {
         ImageSlider,
         TypographyAndParaGraph,
         ContactInfo,
+        MetaData,
+        IndustriesContent,
       ],
       required: true,
     },

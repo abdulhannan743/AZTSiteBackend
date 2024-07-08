@@ -2,7 +2,7 @@ import { backgroundColor } from "../Fields/backgroundColor";
 import { paragraph, typography } from "../Fields/typography";
 
 export const TypographyAndParaGraph = {
-  slug: "yypographyAndParaGraph",
+  slug: "typographyAndParaGraph",
   labels: {
     singular: "Typography And ParaGraph",
     plural: "Typography And ParaGraphs",

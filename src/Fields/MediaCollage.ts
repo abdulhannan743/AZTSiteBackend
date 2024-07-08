@@ -1,4 +1,6 @@
-export const MediaCollage = {
+import { CollectionConfig } from "payload/types";
+
+const MediaCollage: CollectionConfig = {
   slug: "media-collage",
   type: "array",
   labels: {
@@ -23,3 +25,5 @@ export const MediaCollage = {
     },
   ],
 };
+
+export default MediaCollage;

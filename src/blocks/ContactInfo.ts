@@ -1,7 +1,8 @@
+import { Block } from "payload/types";
 import { backgroundColor } from "../Fields/backgroundColor";
 import { address, contactNumber, email } from "../Fields/contactInfo";
 
-export const ContactInfo = {
+export const ContactInfo: Block = {
   slug: "contactInfo",
   labels: {
     singular: "Contact Info Block",

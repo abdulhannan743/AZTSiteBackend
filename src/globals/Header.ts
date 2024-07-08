@@ -1,8 +1,9 @@
+import { GlobalConfig } from "payload/types";
 import { link } from "../Fields/Link";
 
-export const Header = {
+export const Header: GlobalConfig = {
   slug: "header",
-  labels: {
+  label: {
     singular: "Header",
     plural: "Headers",
   },

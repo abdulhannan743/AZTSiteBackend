@@ -6,7 +6,9 @@
 //   drakGrey: "#1D2746",
 // };
 
-export const backgroundColor = {
+import { Field } from "payload/types";
+
+export const backgroundColor: Field = {
   name: "backgroundColor",
   type: "radio",
   label: "Background Color",

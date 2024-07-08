@@ -1,6 +1,7 @@
+import { Block } from "payload/types";
 import { backgroundColor } from "../Fields/backgroundColor";
 
-export const ImageSlider = {
+export const ImageSlider: Block = {
   slug: "slider",
   labels: {
     singular: "Image Slider",

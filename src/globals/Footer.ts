@@ -1,6 +1,5 @@
+import { GlobalConfig } from "payload/types";
 import { link } from "../Fields/Link";
-import { backgroundColor } from "../Fields/backgroundColor";
-import { address, contactNumber, email } from "../Fields/contactInfo";
 import { ContactInfo } from "../blocks/ContactInfo";
 import Content from "../blocks/Content";
 import { Hero } from "../blocks/Hero";
@@ -9,9 +8,9 @@ import { SimpleRichText } from "../blocks/SimpleRichText";
 import { TwoColumn } from "../blocks/TwoColumn";
 import { TypographyAndParaGraph } from "../blocks/TypographyAndParaGraph";
 
-export const Footer = {
+export const Footer: GlobalConfig = {
   slug: "footer",
-  labels: {
+  label: {
     singular: "Footer",
     plural: "Footers",
   },

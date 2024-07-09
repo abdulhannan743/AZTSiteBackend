@@ -1,7 +1,7 @@
-import { CollectionConfig } from "payload/types";
 import { paragraph, typography } from "../Fields/typography";
+import { Block } from "payload/types";
 
-export const MetaData: CollectionConfig = {
+export const MetaData: Block = {
   slug: "metaData",
   labels: {
     singular: "Meta Data",

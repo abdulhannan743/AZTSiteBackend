@@ -7,6 +7,7 @@ import { ImageSlider } from "../blocks/ImageSlider";
 import { TypographyAndParaGraph } from "../blocks/TypographyAndParaGraph";
 import { ContactInfo } from "../blocks/ContactInfo";
 import { CollectionConfig } from "payload/types";
+import { ContactFormBlock } from "../blocks/ContactFormBlock";
 
 export const Pages: CollectionConfig = {
   slug: "pages",
@@ -49,6 +50,7 @@ export const Pages: CollectionConfig = {
         ImageSlider,
         TypographyAndParaGraph,
         ContactInfo,
+        ContactFormBlock,
       ],
       required: true,
     },

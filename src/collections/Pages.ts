@@ -9,6 +9,7 @@ import { ContactInfo } from "../blocks/ContactInfo";
 import { MetaData } from "../blocks/MetaData";
 import { IndustriesContent } from "../blocks/IndustriesContent";
 import { CollectionConfig } from "payload/types";
+import { Analytics } from "../blocks/Analytics";
 
 export const Pages: CollectionConfig = {
   slug: "pages",
@@ -53,6 +54,7 @@ export const Pages: CollectionConfig = {
         ContactInfo,
         MetaData,
         IndustriesContent,
+        Analytics,
       ],
       required: true,
     },

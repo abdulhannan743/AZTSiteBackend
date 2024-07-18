@@ -12,6 +12,8 @@ import { BlogPosts } from "./collections/BlogPosts";
 import { Footer } from "./globals/Footer";
 import { Header } from "./globals/Header";
 import formBuilder from "@payloadcms/plugin-form-builder";
+import { File } from "./Fields/File";
+import ContactForms from "./collections/contactForm";
 
 export default buildConfig({
   serverURL: "http://localhost:4000",
@@ -20,7 +22,7 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: lexicalEditor({}),
-  collections: [Users, Pages, Media, BlogPosts],
+  collections: [Users, Pages, Media, BlogPosts, ContactForms],
   globals: [Header, Footer],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
@@ -31,10 +33,8 @@ export default buildConfig({
   plugins: [
     formBuilder({
       fields: {
-        text: true,
-        email: true,
-        number: true,
-        textarea: true,
+        payment: false,
+        File,
       },
       redirectRelationships: ["pages"],
       // The redirectRelationships property is an array of collection slugs that, when enabled,

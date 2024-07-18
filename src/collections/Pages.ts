@@ -6,6 +6,8 @@ import { CallToAction } from "../blocks/CallToAction";
 import { ImageSlider } from "../blocks/ImageSlider";
 import { TypographyAndParaGraph } from "../blocks/TypographyAndParaGraph";
 import { ContactInfo } from "../blocks/ContactInfo";
+import { MetaData } from "../blocks/MetaData";
+import { IndustriesContent } from "../blocks/IndustriesContent";
 import { CollectionConfig } from "payload/types";
 
 export const Pages: CollectionConfig = {
@@ -49,6 +51,8 @@ export const Pages: CollectionConfig = {
         ImageSlider,
         TypographyAndParaGraph,
         ContactInfo,
+        MetaData,
+        IndustriesContent,
       ],
       required: true,
     },

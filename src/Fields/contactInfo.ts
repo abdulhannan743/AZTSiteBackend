@@ -54,7 +54,7 @@ export const contactNumber: Field = {
     {
       name: "contactNumber",
       label: "Contact Number",
-      type: "number",
+      type: "text",
       required: true,
       // admin: {
       //   step: 1,

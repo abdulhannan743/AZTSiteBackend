@@ -2,6 +2,7 @@ import { CollectionConfig } from "payload/types";
 
 const MediaCollage: CollectionConfig = {
   slug: "media-collage",
+  type: "array",
   labels: {
     singular: "Media Collage",
     plural: "Media Collages",
@@ -12,7 +13,7 @@ const MediaCollage: CollectionConfig = {
       label: "Media",
       type: "array",
       minRows: 3,
-      maxRows: 3,
+      maxRows: 10,
       fields: [
         {
           type: "upload",

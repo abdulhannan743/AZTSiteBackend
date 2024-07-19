@@ -9,6 +9,8 @@ import { ContactInfo } from "../blocks/ContactInfo";
 import { MetaData } from "../blocks/MetaData";
 import { IndustriesContent } from "../blocks/IndustriesContent";
 import { CollectionConfig } from "payload/types";
+import { Services } from "../blocks/Services";
+import { SectionWithCards } from "../blocks/SectionWithCards";
 import { Analytics } from "../blocks/Analytics";
 
 export const Pages: CollectionConfig = {
@@ -52,6 +54,8 @@ export const Pages: CollectionConfig = {
         ImageSlider,
         TypographyAndParaGraph,
         ContactInfo,
+        SectionWithCards,
+        Services,
         MetaData,
         IndustriesContent,
         Analytics,

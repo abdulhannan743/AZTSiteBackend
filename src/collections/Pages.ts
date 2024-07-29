@@ -9,14 +9,18 @@ import { ContactInfo } from "../blocks/ContactInfo";
 import { MetaData } from "../blocks/MetaData";
 import { IndustriesContent } from "../blocks/IndustriesContent";
 import { CollectionConfig } from "payload/types";
-import { Services } from "../blocks/Services";
+import { SectionWithTabs } from "../blocks/SectionWithTabs";
 import { SectionWithCards } from "../blocks/SectionWithCards";
 import { Analytics } from "../blocks/Analytics";
 import { coreValuesBlock } from "../blocks/coreValuesBlock";
 import { TeamBlock } from "../blocks/TeamBlock";
 import { OurCultureBlock } from "../blocks/OurCultureBlock";
 import { DevelopmentPlanningBlock } from "../blocks/WebDevelopmentPlanningBlock";
+
 import { ProcessIoTDevelopment } from "../blocks/ProcessIoTDevelopment";
+
+import { DevelopersSection } from "../blocks/DevelopersSection";
+
 
 export const Pages: CollectionConfig = {
   slug: "pages",
@@ -60,7 +64,7 @@ export const Pages: CollectionConfig = {
         TypographyAndParaGraph,
         ContactInfo,
         SectionWithCards,
-        Services,
+        SectionWithTabs,
         MetaData,
         IndustriesContent,
         Analytics,
@@ -68,7 +72,11 @@ export const Pages: CollectionConfig = {
         TeamBlock,
         OurCultureBlock,
         DevelopmentPlanningBlock,
+
         ProcessIoTDevelopment,
+
+        DevelopersSection,
+
       ],
       required: true,
     },

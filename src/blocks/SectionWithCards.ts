@@ -1,5 +1,6 @@
 import { Block } from "payload/types";
 import { link } from "../Fields/Link";
+import { MetaData } from "./MetaData";
 
 export const SectionWithCards: Block = {
   slug: "section-with-cards",
@@ -39,6 +40,12 @@ export const SectionWithCards: Block = {
           name: "description",
           label: "Description",
           type: "textarea",
+        },
+        {
+          name: "block",
+          label: "Block",
+          type: "blocks",
+          blocks: [MetaData],
         },
         {
           name: "iconName",

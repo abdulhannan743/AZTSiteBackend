@@ -17,6 +17,7 @@ import { TeamBlock } from "../blocks/TeamBlock";
 import { OurCultureBlock } from "../blocks/OurCultureBlock";
 import { DevelopmentPlanningBlock } from "../blocks/WebDevelopmentPlanningBlock";
 import { DevelopersSection } from "../blocks/DevelopersSection";
+import { HomeHeroBlock } from "../blocks/HomeHeroBlock";
 
 export const Pages: CollectionConfig = {
   slug: "pages",
@@ -69,6 +70,7 @@ export const Pages: CollectionConfig = {
         OurCultureBlock,
         DevelopmentPlanningBlock,
         DevelopersSection,
+        HomeHeroBlock,
       ],
       required: true,
     },

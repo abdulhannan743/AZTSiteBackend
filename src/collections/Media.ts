@@ -9,13 +9,13 @@ export const Media: CollectionConfig = {
   upload: true,
   access: {
     read: () => true,
+    create: () => true,
   },
   fields: [
     {
       name: "alt",
       label: "Alt",
       type: "text",
-      required: true,
     },
   ],
 };

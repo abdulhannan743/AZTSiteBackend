@@ -25,5 +25,32 @@ export const Hero: Block = {
       type: "textarea",
     },
     link,
+    {
+      name: "slides",
+      label: "Slides",
+      type: "array",
+      labels: {
+        singular: "Slide",
+        plural: "Slides",
+      },
+      fields: [
+        {
+          name: "title",
+          label: "Title",
+          type: "text",
+        },
+        {
+          name: "description",
+          label: "Description",
+          type: "textarea",
+        },
+        {
+          name: "image",
+          label: "Image",
+          type: "upload",
+          relationTo: "media",
+        },
+      ],
+    },
   ],
 };

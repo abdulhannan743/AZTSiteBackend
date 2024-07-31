@@ -10,15 +10,21 @@ import { MetaData } from "../blocks/MetaData";
 import { IndustriesContent } from "../blocks/IndustriesContent";
 import { CollectionConfig } from "payload/types";
 
+
 import { ContactFormBlock } from "../blocks/ContactFormBlock";
 
 import { Services } from "../blocks/Services";
+
+import { SectionWithTabs } from "../blocks/SectionWithTabs";
+
 import { SectionWithCards } from "../blocks/SectionWithCards";
 import { Analytics } from "../blocks/Analytics";
 import { coreValuesBlock } from "../blocks/coreValuesBlock";
 import { TeamBlock } from "../blocks/TeamBlock";
 import { OurCultureBlock } from "../blocks/OurCultureBlock";
 import { DevelopmentPlanningBlock } from "../blocks/WebDevelopmentPlanningBlock";
+import { DevelopersSection } from "../blocks/DevelopersSection";
+import { HomeHeroBlock } from "../blocks/HomeHeroBlock";
 
 
 export const Pages: CollectionConfig = {
@@ -66,7 +72,11 @@ export const Pages: CollectionConfig = {
         ContactFormBlock,
 
         SectionWithCards,
+
         Services,
+
+
+        SectionWithTabs,
 
         MetaData,
         IndustriesContent,
@@ -75,6 +85,8 @@ export const Pages: CollectionConfig = {
         TeamBlock,
         OurCultureBlock,
         DevelopmentPlanningBlock,
+        DevelopersSection,
+        HomeHeroBlock,
       ],
       required: true,
     },

@@ -1,5 +1,7 @@
 import { Block } from "payload/types";
 import { link } from "../Fields/Link";
+import { MetaData } from "./MetaData";
+import { ImageSlider } from "./ImageSlider";
 
 export const SectionWithCards: Block = {
   slug: "section-with-cards",
@@ -18,6 +20,13 @@ export const SectionWithCards: Block = {
       name: "description",
       label: "Description",
       type: "textarea",
+    },
+
+    {
+      name: "image",
+      label: "Image",
+      type: "upload",
+      relationTo: "media",
     },
     link,
     {
@@ -41,6 +50,18 @@ export const SectionWithCards: Block = {
           type: "textarea",
         },
         {
+          name: "block",
+          label: "Block",
+          type: "blocks",
+          blocks: [MetaData],
+        },
+        {
+          name: "slider",
+          label: "image slider",
+          type: "blocks",
+          blocks: [ImageSlider],
+        },
+        {
           name: "iconName",
           label: "Icon Name / Designation",
           type: "text",
@@ -52,6 +73,7 @@ export const SectionWithCards: Block = {
           relationTo: "media",
         },
         link,
+        // ImageSlider,
       ],
     },
   ],

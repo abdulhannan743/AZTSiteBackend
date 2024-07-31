@@ -20,6 +20,7 @@ import { DevelopmentPlanningBlock } from "../blocks/WebDevelopmentPlanningBlock"
 import { ProcessIoTDevelopment } from "../blocks/ProcessIoTDevelopment";
 
 import { DevelopersSection } from "../blocks/DevelopersSection";
+import { HomeHeroBlock } from "../blocks/HomeHeroBlock";
 
 
 export const Pages: CollectionConfig = {
@@ -76,6 +77,10 @@ export const Pages: CollectionConfig = {
         ProcessIoTDevelopment,
 
         DevelopersSection,
+
+
+
+        HomeHeroBlock,
 
       ],
       required: true,

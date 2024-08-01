@@ -13,7 +13,6 @@ import { Footer } from "./globals/Footer";
 import { Header } from "./globals/Header";
 import formBuilder from "@payloadcms/plugin-form-builder";
 import { File } from "./Fields/File";
-import ContactForms from "./collections/contactForm";
 
 export default buildConfig({
   serverURL: "http://localhost:4000",
@@ -22,7 +21,7 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: lexicalEditor({}),
-  collections: [Users, Pages, Media, BlogPosts, ContactForms],
+  collections: [Users, Pages, Media, BlogPosts],
   globals: [Header, Footer],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),

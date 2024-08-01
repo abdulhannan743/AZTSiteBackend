@@ -9,26 +9,18 @@ import { ContactInfo } from "../blocks/ContactInfo";
 import { MetaData } from "../blocks/MetaData";
 import { IndustriesContent } from "../blocks/IndustriesContent";
 import { CollectionConfig } from "payload/types";
-
-
 import { ContactFormBlock } from "../blocks/ContactFormBlock";
-
-import { Services } from "../blocks/Services";
-
 import { SectionWithTabs } from "../blocks/SectionWithTabs";
-
 import { SectionWithCards } from "../blocks/SectionWithCards";
 import { Analytics } from "../blocks/Analytics";
 import { coreValuesBlock } from "../blocks/coreValuesBlock";
 import { TeamBlock } from "../blocks/TeamBlock";
 import { OurCultureBlock } from "../blocks/OurCultureBlock";
 import { DevelopmentPlanningBlock } from "../blocks/WebDevelopmentPlanningBlock";
-
 import { ProcessIoTDevelopment } from "../blocks/ProcessIoTDevelopment";
-
 import { DevelopersSection } from "../blocks/DevelopersSection";
 import { HomeHeroBlock } from "../blocks/HomeHeroBlock";
-
+import { MegaMenuBlock } from "../blocks/MegaMenu";
 
 export const Pages: CollectionConfig = {
   slug: "pages",
@@ -71,16 +63,9 @@ export const Pages: CollectionConfig = {
         ImageSlider,
         TypographyAndParaGraph,
         ContactInfo,
-
         ContactFormBlock,
-
         SectionWithCards,
-
-        Services,
-
-
         SectionWithTabs,
-
         MetaData,
         IndustriesContent,
         Analytics,
@@ -88,15 +73,10 @@ export const Pages: CollectionConfig = {
         TeamBlock,
         OurCultureBlock,
         DevelopmentPlanningBlock,
-
         ProcessIoTDevelopment,
-
         DevelopersSection,
-
-
-
         HomeHeroBlock,
-
+        MegaMenuBlock,
       ],
       required: true,
     },

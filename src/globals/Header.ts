@@ -1,5 +1,6 @@
 import { GlobalConfig } from "payload/types";
 import { link } from "../Fields/Link";
+import { MegaMenuBlock } from "../blocks/MegaMenu";
 
 export const Header: GlobalConfig = {
   slug: "header",
@@ -38,6 +39,12 @@ export const Header: GlobalConfig = {
           label: "Parent Page",
           type: "relationship",
           relationTo: "pages",
+        },
+        {
+          name: "subMenu",
+          label: "Sub Menu",
+          type: "blocks",
+          blocks: [MegaMenuBlock],
         },
       ],
     },

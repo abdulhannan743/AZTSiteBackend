@@ -54,9 +54,11 @@ export default buildConfig({
       //are populated as options in the form's redirect field. This field is used to redirect the
       //user to a dedicated confirmation page upon form submission (optional).
     }),
+
   ],
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
   }),
   cors: ["http://localhost:3000"],
+
 });

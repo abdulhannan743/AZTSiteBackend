@@ -17,8 +17,10 @@ import { coreValuesBlock } from "../blocks/coreValuesBlock";
 import { TeamBlock } from "../blocks/TeamBlock";
 import { OurCultureBlock } from "../blocks/OurCultureBlock";
 import { DevelopmentPlanningBlock } from "../blocks/WebDevelopmentPlanningBlock";
+import { ProcessIoTDevelopment } from "../blocks/ProcessIoTDevelopment";
 import { DevelopersSection } from "../blocks/DevelopersSection";
 import { HomeHeroBlock } from "../blocks/HomeHeroBlock";
+import { MegaMenuBlock } from "../blocks/MegaMenu";
 
 export const Pages: CollectionConfig = {
   slug: "pages",
@@ -71,8 +73,10 @@ export const Pages: CollectionConfig = {
         TeamBlock,
         OurCultureBlock,
         DevelopmentPlanningBlock,
+        ProcessIoTDevelopment,
         DevelopersSection,
         HomeHeroBlock,
+        MegaMenuBlock,
       ],
       required: true,
     },

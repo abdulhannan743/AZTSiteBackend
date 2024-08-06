@@ -13,6 +13,8 @@ import { lexicalEditor } from "@payloadcms/richtext-lexical";
 import { BlogPosts } from "./collections/BlogPosts";
 import { Footer } from "./globals/Footer";
 import { Header } from "./globals/Header";
+import formBuilder from "@payloadcms/plugin-form-builder";
+import { File } from "./Fields/File";
 
 export default buildConfig({
   serverURL: "http://localhost:4000",
@@ -42,8 +44,19 @@ export default buildConfig({
         },
       ],
     }),
+    formBuilder({
+      fields: {
+        payment: false,
+        File,
+      },
+      redirectRelationships: ["pages"],
+      // The redirectRelationships property is an array of collection slugs that, when enabled,
+      //are populated as options in the form's redirect field. This field is used to redirect the
+      //user to a dedicated confirmation page upon form submission (optional).
+    }),
   ],
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
   }),
+  cors: ["http://localhost:3000"],
 });

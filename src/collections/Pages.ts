@@ -9,6 +9,7 @@ import { ContactInfo } from "../blocks/ContactInfo";
 import { MetaData } from "../blocks/MetaData";
 import { IndustriesContent } from "../blocks/IndustriesContent";
 import { CollectionConfig } from "payload/types";
+import { ContactFormBlock } from "../blocks/ContactFormBlock";
 import { SectionWithTabs } from "../blocks/SectionWithTabs";
 import { SectionWithCards } from "../blocks/SectionWithCards";
 import { Analytics } from "../blocks/Analytics";
@@ -60,6 +61,7 @@ export const Pages: CollectionConfig = {
         ImageSlider,
         TypographyAndParaGraph,
         ContactInfo,
+        ContactFormBlock,
         SectionWithCards,
         SectionWithTabs,
         MetaData,

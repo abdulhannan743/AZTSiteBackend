@@ -1,5 +1,4 @@
 import { Block } from "payload/types";
-//custom file field for form builder plugin
 export const File: Block = {
   fields: [
     {

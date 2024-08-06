@@ -16,6 +16,7 @@ export const Media: CollectionConfig = {
       name: "alt",
       label: "Alt",
       type: "text",
+      required: true,
     },
   ],
 };

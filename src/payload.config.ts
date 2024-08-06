@@ -1,8 +1,10 @@
 import path from "path";
 
+import { buildConfig } from "payload/config";
+import seoPlugin from "@payloadcms/plugin-seo";
+
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { webpackBundler } from "@payloadcms/bundler-webpack";
-import { buildConfig } from "payload/config";
 
 import Users from "./collections/Users";
 import { Pages } from "./collections/Pages";
@@ -27,7 +29,20 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, "generated-schema.graphql"),
   },
-  plugins: [],
+  plugins: [
+    seoPlugin({
+      collections: ["pages"],
+      uploadsCollection: "media",
+
+      fields: [
+        {
+          name: "keywords",
+          label: "Keywords",
+          type: "text",
+        },
+      ],
+    }),
+  ],
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
   }),

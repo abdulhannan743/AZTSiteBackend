@@ -24,6 +24,24 @@ export const Hero: Block = {
       label: "Text",
       type: "textarea",
     },
+    {
+      name: "subItem",
+      label: "Sub Item",
+      type: "array",
+      fields: [
+        {
+          name: "icon",
+          label: "Icon",
+          type: "upload",
+          relationTo: "media",
+        },
+        {
+          name: "iconHeading",
+          label: "Icon Heading",
+          type: "text",
+        },
+      ],
+    },
     link,
     {
       name: "slides",
